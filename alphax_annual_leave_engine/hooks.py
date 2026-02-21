@@ -15,3 +15,11 @@ override_whitelisted_methods = {
     "erpnext.hr.doctype.leave_application.leave_application.get_number_of_leave_days":
         "alphax_annual_leave_engine.overrides.leave_application.get_number_of_leave_days"
 }
+
+# --- Asset hooks (explicit empty) to prevent Frappe v15 esbuild from resolving undefined paths ---
+app_include_js = []
+app_include_css = []
+web_include_js = []
+web_include_css = []
+doctype_js = {}
+doctype_css = {}
