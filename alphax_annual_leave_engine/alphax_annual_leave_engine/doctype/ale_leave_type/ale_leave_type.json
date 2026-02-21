@@ -1,0 +1,44 @@
+{
+  "doctype": "DocType",
+  "name": "ALE Leave Type",
+  "module": "AlphaX Annual Leave Engine",
+  "custom": 0,
+  "is_submittable": 0,
+  "is_single": 0,
+  "istable": 1,
+  "allow_copy": 0,
+  "allow_rename": 0,
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "autoname": "hash",
+  "fields": [
+    {
+      "fieldname": "leave_type",
+      "label": "Leave Type",
+      "fieldtype": "Link",
+      "options": "Leave Type",
+      "reqd": 1,
+      "in_list_view": 1
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 0,
+      "cancel": 0,
+      "amend": 0,
+      "report": 1,
+      "export": 1,
+      "import": 1,
+      "share": 1,
+      "print": 1,
+      "email": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC"
+}

@@ -1,0 +1,13 @@
+[
+  {
+    "doctype": "Custom Field",
+    "name": "Holiday-custom_exclude_from_annual_leave",
+    "dt": "Holiday",
+    "fieldname": "custom_exclude_from_annual_leave",
+    "label": "Exclude from Annual Leave Deduction",
+    "fieldtype": "Check",
+    "default": "0",
+    "insert_after": "weekly_off",
+    "description": "If checked, this holiday day will NOT be deducted from Annual Leave (calendar leave). Weekends should normally be unchecked."
+  }
+]

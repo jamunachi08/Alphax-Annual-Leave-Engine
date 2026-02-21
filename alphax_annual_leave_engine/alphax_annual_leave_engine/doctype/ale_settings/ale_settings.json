@@ -1,0 +1,53 @@
+{
+  "doctype": "DocType",
+  "name": "ALE Settings",
+  "module": "AlphaX Annual Leave Engine",
+  "custom": 0,
+  "is_submittable": 0,
+  "is_single": 1,
+  "istable": 0,
+  "allow_copy": 0,
+  "allow_rename": 0,
+  "editable_grid": 0,
+  "engine": "InnoDB",
+  "autoname": "prompt",
+  "fields": [
+    {
+      "fieldname": "enabled",
+      "label": "Enabled",
+      "fieldtype": "Check",
+      "default": "0"
+    },
+    {
+      "fieldname": "section_break_1",
+      "label": "Leave Types",
+      "fieldtype": "Section Break"
+    },
+    {
+      "fieldname": "leave_types",
+      "label": "Apply To Leave Types",
+      "fieldtype": "Table",
+      "options": "ALE Leave Type"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 0,
+      "submit": 0,
+      "cancel": 0,
+      "amend": 0,
+      "report": 1,
+      "export": 1,
+      "import": 0,
+      "share": 0,
+      "print": 1,
+      "email": 0
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC"
+}
